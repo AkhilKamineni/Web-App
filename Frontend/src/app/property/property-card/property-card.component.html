@@ -1,12 +1,19 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4 p-4">
-    <div class="card">
-     <img class="porpImg" src="assets/images/house_default.png">
-      <div class="card-body">
-        <h1>{{Property.Type}}</h1>
-        <h2>{{Property.Name}}</h2>
-        <h3>{{Property.Price}}</h3>
-      </div>
-    </div>
+<div class="card">
+ <div class="card-img-wrapper">
+   <img class="card-img-top" src="assets/images/house_default.png">
+   <ul class="list-inline text-center member-icons animate">
+     <li class="list-inline-item">
+       <button class="btn btn-primary"><fa-icon [icon]="faEdit"></fa-icon></button>
+     </li>
+     <li class="list-inline-item">
+      <button class="btn btn-primary"><fa-icon [icon]="faAddressBook"></fa-icon></button>
+     </li>
+   </ul>
+  </div>
+
+  <div class="card-body">
+    <h1>{{property.Name}}</h1>
+    <h2>{{property.Type}}</h2>
+    <h3>{{property.Price}}</h3>
   </div>
 </div>
